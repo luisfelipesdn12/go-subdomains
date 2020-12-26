@@ -10,8 +10,6 @@ import (
 	"os"
 )
 
-const domain = "localhost"
-
 // Developer is the golang struct to
 // the values stored in developers.json
 type Developer struct {
@@ -26,6 +24,7 @@ type Developer struct {
 var (
 	tpl        *template.Template
 	developers []Developer
+	domain     string
 	port       string
 )
 
@@ -40,6 +39,13 @@ func init() {
 	err = json.Unmarshal(devsJSON, &developers)
 	if err != nil {
 		log.Println(err)
+	}
+
+	domainEnv, exists := os.LookupEnv("DOMAIN")
+	if exists {
+		domain = domainEnv
+	} else {
+		domain = "localhost"
 	}
 
 	portEnv, exists := os.LookupEnv("PORT")
