@@ -1,0 +1,26 @@
+[
+    {
+        "subdomain": "luis",
+        "name": "Luis Felipe",
+        "github": "luisfelipesdn12",
+        "email": "luisfelipe@gmail.com",
+        "youtube": "https://www.youtube.com/c/luisfelipesdn12",
+        "description": "Sou um estudante de ciência da computação e posso desenvolver: automações, sites, machine learning, APIs e data science. Minhas principais linguagens de programação são Python, Java e Go."
+    },
+    {
+        "subdomain": "jeff",
+        "name": "Jefferson Calmon",
+        "github": "jefferson-calmon",
+        "email": "jeffersoncalmon@gmail.com",
+        "youtube": "https://www.youtube.com/c/jefferson-calmon",
+        "description": "Apaixonado por programação e tecnologias, eu sou um desenvolvedor front-end & Javascript. No meu tempo livre me aventuro no back-end com NodeJS e Express."
+    },
+    {
+        "subdomain": "mil",
+        "name": "Milton Meira",
+        "github": "milton-meira",
+        "email": "ceo@nooio.com.br",
+        "youtube": "https://www.youtube.com/c/miltonmeiranooio",
+        "description": "CEO do NOOIO - Sou Digital Marketing Specialist - Ideias Revolution - 𝐀𝐦𝐨 𝐏𝐢𝐳𝐳𝐚 (amava...voltarei a amar)."
+    }
+]

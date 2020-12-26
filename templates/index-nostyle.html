@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Name}} - Code Development</title>
+    <link rel="shortcut icon" href="https://luisfelipesdn12.now.sh/assets/initial-state-circle.svg" type="image/x-icon">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section>
+        <div>
+            <nav>
+                <!-- Home Page Button -->
+                <a href="/">
+                  <img src="https://luisfelipesdn12.now.sh/assets/initial-state.png" alt="logo">
+                </a>
+                <!-- Buttons to left -->
+                <ul>
+                    <!-- Idiom Selection -->
+                    <li>
+                        <div>
+                            <select>
+                                <option value="PORTUGUESE">PT 🇧🇷</option>
+                            </select>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <h1>Olá, eu sou {{.Name}}!</h1>
+            <p>{{.Description}}</p>
+            <ul>
+                <li>
+                    <a href="https://github.com/{{.Github}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/github.png" alt="golang logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:{{.Email}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/gmail.png" alt="gmail logo">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{.Youtube}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/youtube-play.png" alt="youtube logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido com HTML, CSS e JavaScript por <a href="#">{{.Name}}</a>.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Name}} - Code Development</title>
+    <link rel="shortcut icon" href="https://luisfelipesdn12.now.sh/assets/initial-state-circle.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css">
+</head>
+<body style="font-family: 'Asap', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'">
+    <!-- Hero Section -->
+    <section class="bg-indigo-100 bg-opacity-50 p-3 pb-20 sm:grid sm:grid-cols-8 xl:grid-cols-6">
+        <div class="mx-4 sm:col-start-2 sm:col-end-8 xl:col-end-6">
+            <nav class="flex justify-between items-center my-4 container">
+                <!-- Home Page Button -->
+                <a href="/">
+                  <img src="https://luisfelipesdn12.now.sh/assets/initial-state.png" alt="logo" class="w-10 h-10 bg-white shadow-md rounded-full">
+                </a>
+                <!-- Buttons to left -->
+                <ul class="flex">
+                    <!-- Idiom Selection -->
+                    <li class="ml-3">
+                        <div class="inline-block relative">
+                            <select id="idiom-select" class="block font-semibold appearance-none bg-white px-4 py-2 pr-6 rounded-full shadow-md leading-tight">
+                                <option value="PORTUGUESE">PT 🇧🇷</option>
+                            </select>
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path></svg>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <h1 id="hero-greeting" class="font-bold text-gray-900 text-center mt-16 mb-5 text-4xl">Olá, eu sou {{.Name}}!</h1>
+            <p id="hero-sentence" class="text-gray-700 text-center text-2xl">{{.Description}}</p>
+            <ul id="find-me" class="flex justify-center mt-12">
+                <li class="w-12 h-12 p-1 m-2 shadow rounded-full bg-white">
+                    <a href="https://github.com/{{.Github}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/github.png" alt="golang logo">
+                    </a>
+                </li>
+                <li class="w-12 h-12 p-2 m-2 shadow rounded-full bg-white">
+                    <a href="mailto:{{.Email}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/gmail.png" alt="gmail logo">
+                    </a>
+                </li>
+                <li class="w-12 h-12 p-2 m-2 shadow rounded-full bg-white">
+                    <a href="{{.Youtube}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/240/000000/youtube-play.png" alt="youtube logo">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-100 py-6 px-12">
+        <p id="dev-by" class="text-center text-gray-700 font-medium">Desenvolvido com HTML, CSS e JavaScript por <a href="#" class="text-blue-700">{{.Name}}</a>.</p>
+    </footer>
+</body>
+</html>
